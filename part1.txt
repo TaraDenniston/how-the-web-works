@@ -1,0 +1,32 @@
+Part One: Solidify Terminology
+In your own words, define the following terms:
+
+1. What is HTTP?
+
+
+
+
+2. What is a URL?
+
+
+3. What is DNS?
+
+
+4. What is a query string?
+
+
+5. What are two HTTP verbs and how are they different?
+
+
+6. What is an HTTP request?
+
+
+7. What is an HTTP response?
+
+
+8. What is an HTTP header? Give a couple examples of request and response headers 
+   you have seen.
+
+
+9. What are the processes that happen when you type “http://somesite.com/some/page.html” 
+   into a browser?
