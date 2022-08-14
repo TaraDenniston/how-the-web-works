@@ -1,8 +1,5 @@
 <!-- Part Two: Practice Tools
 
-1. Using curl, make a GET request to the icanhazdadjoke.com API to find all jokes 
-   involving the word “pirate”
-2. Use dig to find what the IP address is for icanhazdadjoke.com
 3. Make a simple web page and serve it using python3 -m http.server. Visit the page 
    in a browser. -->
 
@@ -12,9 +9,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Simple Web Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-<body>
-  
+<body >
+   <div class="container bg-light">
+      <h1 class="text-secondary text-center p-5">This is a Simple Web Page</h1>
+      <ol class="list-group list-group-flush list-group-numbered px-4 pb-4">
+         <li class="list-group-item bg-light p-3">I am making it for an assignment</li>
+         <li class="list-group-item bg-light p-3">I am practicing using a python3 utility to make a simple server</li>
+         <li class="list-group-item bg-light p-3">I am also practicing using Bootstrap</li>
+      </ol>
+      <div class="d-grid gap-2 col-6 mx-auto pb-5">
+         <button type="button" class="btn btn-secondary btn-lg" disabled>Thank you for visiting!</button>
+      </div>
+   </div>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
