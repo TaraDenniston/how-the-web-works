@@ -3,30 +3,84 @@ In your own words, define the following terms:
 
 1. What is HTTP?
 
-
+   HTTP (Hypertext Transfer Protocol) is a set of rules that specifies how a browser 
+   and a web server can communicate.
 
 
 2. What is a URL?
+   
+   A URL (Uniform Resource Locator) gives the browser information it needs to locate
+   what the user is looking for.
+
+   http://site.com/some/page.html?x=1
+    - "http" = protocol
+    - "site.com" = hostname
+    - "/some/page.html" = resource
+    - "?x=1" = query
+    - browsers also use a default port depending on which protocol is being used
+      (80 for http and 443 for https) - use ":[port#]" after url to specify
 
 
 3. What is DNS?
+   
+   DNS (Domain Name System) takes a domain name/hostname and translates it into an 
+   IP address
+    - looks at computer cache first
+    - looks on router next
+    - then looks to ISP
+    - finally looks at the DNS server
+    - if IP address is not found, returns an error
 
 
 4. What is a query string?
 
+   A query string is an optional part of the URL that provides extra information
+   (such as a search term) that the server can use to find a specific resource 
+   or a list of resouces. The string always begins with a "?" and follows with a
+   key/value pair (such as "q=dogs") or multiple key/value pairs separated by "&".
+
 
 5. What are two HTTP verbs and how are they different?
+
+   GET - requests information from the server (doesn't change server data), and 
+      arguments are usually passed in a query string
+   POST - sends information to update something on the server (update info in a 
+      database, social media post, etc.), and arguments are usually sent in the 
+      body of the request
 
 
 6. What is an HTTP request?
 
+   An HTTP request is when the browser sends information to a web server using 
+   a specific protocol format (includes the request method, protocol version, URL, 
+   and headers) in order to request the server to do something (send info
+   back, change something, delete something, etc.). 
+
 
 7. What is an HTTP response?
+
+   An HTTP response is when the server responds in a particular protocol format 
+   with the information regarding the request (html, css, javascript, etc. + 
+   protocol version, status code, and headers with additional information)
 
 
 8. What is an HTTP header? Give a couple examples of request and response headers 
    you have seen.
 
+   An HTTP header contains additional information sent with a request or a response.
+
+   request: hostname, language, date/time of browser, cookies
+   response: content type, date/time of server, cookies, caching info
+
 
 9. What are the processes that happen when you type “http://somesite.com/some/page.html” 
    into a browser?
+
+   When a user types a URL into a browser, the browser finds the specific server it
+   needs to send the request to by using DNS to find the IP address of the hostname. 
+   The browser sends an HTTP or HTTPS request to the server using the other information 
+   included in the URL. The server (if located) then sends a response back to the 
+   browser using the same protocol. The browser uses the information included in the
+   response to display information to the user, which could include a rendered website
+   that the user was expecting or an error if the resource was not found.
+
