@@ -6,3 +6,8 @@
 // 2. Read about the URL API at https://developer.mozilla.org/en-US/docs/Web/API/URL
 // 3. Try some of the code examples in the Chrome Console so that you can get 
 //    comfortable with the basic methods and properties for instances of the URL class.
+
+let m = 'https://developer.mozilla.org';
+let a = new URL("/", m); 
+let b = new URL(m);
+let d = new URL('/en-US/docs', b);
